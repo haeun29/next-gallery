@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gallery</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+
+    <h1>image gallery</h1>
+    <section id="content">
+        <img src="https://via.placeholder.com/800x400/f80?text=1" alt="1">
+        <img src="https://via.placeholder.com/800x400/ff0?text=2" alt="2">
+        <img src="https://via.placeholder.com/800x400/09f?text=3" alt="3">
+    </section>
+    <button class="nextBtn" onclick="imgMove()">다음이미지</button>
+
+</div> <!--container-->
+
+    <script>
+        function imgMove() {
+            //함수를 만들어서 호출 하는법
+            $('#content img:first').appendTo('#content');
+        }
+
+        // $(function(){
+            //제이쿼리로 만들어서 호출하는 법
+        //     //nextBtn을 누르면 1번 이미지 뒤로가게 하기
+        //     $('.nextBtn').click(function(){
+        //         $('#content img:first').appendTo('#content');
+        //     });
+
+        // });
+    </script>
+
+
+    
+</body>
+</html>
