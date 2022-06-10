@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    margin-bottom: 1em;
+}
+
+.container {
+    width: 800px;
+}
+
+#content {
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.nextBtn {
+    border: none;
+    background-color: #2ecc71;
+    color: #fff;
+    padding: 5px 20px;
+    margin-top: 1em;
+}
